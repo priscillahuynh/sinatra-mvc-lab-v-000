@@ -7,8 +7,8 @@ class PigLatinizer
   end
 
   def piglatinize(sentence)
-    array = to_pig(sentence)
     binding.pry
+    array = to_pig(sentence)
   end
   
   def new_pig(word)
