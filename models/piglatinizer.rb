@@ -8,6 +8,7 @@ class PigLatinizer
   def piglatinize(sentence)
     binding.pry
     array = to_pig(sentence)
+    array.collect {|w| new_pig(w)}.join(" ")
     
   end
   
