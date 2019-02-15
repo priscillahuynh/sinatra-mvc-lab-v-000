@@ -2,7 +2,6 @@ class PigLatinizer
   
   def to_pig(phrase)
     words = phrase.split(" ")
-    binding.pry
     words.collect {|w| piglatinize(w)}.join(" ")
   end
 
