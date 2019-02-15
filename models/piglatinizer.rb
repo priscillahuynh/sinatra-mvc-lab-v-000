@@ -13,7 +13,6 @@ class PigLatinizer
   
   def new_pig(word)
     letters = word.split(/([^aeiouAEIOU]*)([aeiouAEIOU]*)(.*)/)
-    # binding.pry
     first = letters[1] 
     second = letters[2] + (letters[3] || "")
     if first.length>0
